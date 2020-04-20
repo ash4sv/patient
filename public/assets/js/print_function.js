@@ -1,6 +1,9 @@
 $("#print").find('.print_label').on('click', function() {
 	//Print ele2 with default options
-	$.print("#print_label");
+	$("#print_label").print({
+		// globalStyles :false, 
+		mediaPrint : true,
+	})
 });
 
 $("#print").find('.print_all').on('click', function() {

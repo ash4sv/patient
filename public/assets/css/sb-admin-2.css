@@ -11004,6 +11004,8 @@ body.sidebar-toggled footer.sticky-footer {
 }
 @media print {
   body {
+    margin:0 0;
+    padding:0 0;
     line-height:1.25rem;
   }
   #print_label {
@@ -11011,8 +11013,6 @@ body.sidebar-toggled footer.sticky-footer {
     padding:0 0;
     background:#ffffff;
     color:#000000;
-    max-width:6cm;
-    max-height:3cm;
     font-size:11pt;
   }
   .card-body {

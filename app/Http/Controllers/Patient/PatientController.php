@@ -43,16 +43,7 @@ class PatientController extends Controller
     {
         $request->validate([
             'name' => 'required',
-            'ic_num' => 'required',
-            'sex' => 'required',
-            'race' => 'required',
-            'nationality' => 'required',
-            'tel_no' => 'required',
-            'address_building' => 'required',
-            'address_street_1' => 'required',
-            'state' => 'required',
-            'address_town' => 'required',
-            'postcode' => 'required'
+            'ic_num' => 'required'
         ]);
         $patient = new Patient;
         $patient->ref_num = request('ref_num');
